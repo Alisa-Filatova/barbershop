@@ -20,10 +20,10 @@
                             <a href="index.html">Главная</a>
                         </li>
                         <li>
-                            <a href="#">Информация</a>
+                            <a href="index.html#info">Информация</a>
                         </li>
                         <li>
-                            <a href="#">Новости</a>
+                            <a href="index.html#news">Новости</a>
                         </li>
                         <li class="active">
                             <span>Прайс-лист</span>
@@ -32,13 +32,50 @@
                             <a href="shop.html">Магазин</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="index.html#contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
 
                 <div class="user-block">
-                    <a href="#" class="login">Вход</a>
+                    <input
+                        class="btn-form"
+                        type="checkbox"
+                        name="btn-form"
+                        id="btn-form"
+                    >
+                    <label for="btn-form" class="open-form login">Вход</label>
+                    <div class="modal-content">
+                        <div class="modal-content-close">Закрыть</div>
+                        <h2 class="modal-content-title">Личный кабинет</h2>
+                        <p>Введите, пожалуйста, свой логин и пароль</p>
+
+                        <form class="login-form" action="" method="">
+                            <input
+                                type="text"
+                                class="icon-user"
+                                name="login"
+                                placeholder="Логин"
+                                required
+                            >
+                            <input
+                                type="password"
+                                class="icon-password"
+                                name="password"
+                                placeholder="Пароль"
+                                required
+                            >
+                            <input
+                                type="checkbox"
+                                name="remember"
+                                id="remember-me"
+                            >
+                            <label for="remember-me">Запомните меня</label>
+                            <a href="#" class="restore">Я забыл пароль!</a>
+                            <button type="submit" class="btn">Войти</button>
+                        </form>
+
+                    </div>
                 </div>
 
             </div>
@@ -134,5 +171,7 @@
                 
             </div>
         </footer>
+
+        <script src="js/modal.js"></script>
     </body>
 </html>
